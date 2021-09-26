@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body{
     background-color: #212121;
+    color: white;
 }
 
 .navbar{
@@ -71,20 +72,21 @@ body{
 
 .name__teaser{
     display: flex;
-    width: 50%;
+    width: 30%;
     padding-left: 10%;
     text-align: center;
+    font-size: 1.4em;
     color: white;
 }
 
 .portfolio__teaser{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 70%;
 
     text-align: center;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 10vw;
     font-weight: bold;
 
     background: linear-gradient(45deg, #673ab7, #21ab72, #ab3497);
@@ -184,16 +186,23 @@ body{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .home__container{
+        display:flex;   
+        flex-direction: column;
+        height: auto;
+    }
+
     .name__teaser{
-        width: 100vh;
-        height: 45vh;
+        display: flex;
+        width: 80%;
+        padding-bottom: 10%;
         text-align: center;
         color: white;
+        font-size: 6vw;
     }
 
     .portfolio__teaser{
-        width: 100vh;
-        height: 45%;
-        float: left;
+        width: 90%;
+        font-size: 15vw;
     }
 }
