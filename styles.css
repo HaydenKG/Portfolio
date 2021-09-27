@@ -7,12 +7,12 @@
 
 body{
     background-color: white;
-    color: black;
+    color: #212121;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: #212121;
 }
 
 .navbar{
@@ -22,18 +22,15 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    /*position: sticky;*/
     top: 0;
     z-index: 999;
 }
 
 #navbar__logo{
-    position: absolute;
-    top: 20%;
+    position: relative;
     left: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 5%;
 }
 
 .navbar__container{
@@ -77,29 +74,10 @@ a{
 
 .name__teaser{
     display: flex;
-    width: 30%;
+    flex-direction: column;
     padding-left: 10%;
-    text-align: center;
     font-size: 1.4em;
-    color: black;
-}
-
-.portfolio__teaser{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 10vw;
-    font-weight: bold;
-
-    background: linear-gradient(45deg, #673ab7, #21ab72, #ab3497);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: move 15s ease infinite;
-    animation: move 15s ease infinite;
+    color: #212121;
 }
 
 .sectiontitle{
@@ -116,10 +94,12 @@ a{
     margin-bottom: 5%;
 }
 
-.sections image{
+.sections img {
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 40px 40px 5px darkgray;
-}
+    border-radius: 10px;
+    background: rgba(33, 33, 33, 0.3)
+}    
 
 .faderight {
     height: 100%;
@@ -147,12 +127,12 @@ a{
 }
 
 .content-text-right{
-    top: 50%;
-    right: 15%;
-    transform: translate(-15%, -50%);
-    font-size: 140%;
-    align-self: center;
-    margin: 1%;
+    position: absolute;
+    left: 90px;
+    bottom: 90px;
+    color: #fff;
+    z-index: 10;
+    max-width: 550px;
 }
 
 .content-text-left{
@@ -173,10 +153,12 @@ a{
 }
 
 .footer__link-items{
-    align-items: center;
     padding: 2rem;
     text-align: center;
     color: white;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
 }
 
 @-webkit-keyframes move {
@@ -271,20 +253,14 @@ a{
     .home__container{
         display:flex;   
         flex-direction: column;
-        height: 40em;
+        height: 100%;
     }
 
     .name__teaser{
         display: flex;
         width: 80%;
         padding-bottom: 10%;
-        text-align: center;
-        color: white;
+        height: 100%;
         font-size: 6vw;
-    }
-
-    .portfolio__teaser{
-        width: 90%;
-        font-size: 15vw;
     }
 }
