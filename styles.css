@@ -6,8 +6,13 @@
 }
 
 body{
-    background-color: #212121;
-    color: white;
+    background-color: white;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .navbar{
@@ -54,7 +59,7 @@ body{
 }
 
 .navbar__links{
-    color:white;
+    color:black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +81,7 @@ body{
     padding-left: 10%;
     text-align: center;
     font-size: 1.4em;
-    color: white;
+    color: black;
 }
 
 .portfolio__teaser{
@@ -95,6 +100,83 @@ body{
     -webkit-text-fill-color: transparent;
     -webkit-animation: move 15s ease infinite;
     animation: move 15s ease infinite;
+}
+
+.sectiontitle{
+    text-align: center;
+}
+
+.sections{
+    position: relative;
+    border-radius: 25px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    margin-bottom: 5%;
+}
+
+.sections image{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 40px 40px 5px darkgray;
+}
+
+.faderight {
+    height: 100%;
+    width: 70%;
+    position:absolute;
+    background: -webkit-linear-gradient(left, 
+                rgba(33, 33, 33, 0.1) 85%,
+                rgba(33, 33, 33, 0.4) 90%,
+                rgba(33, 33, 33, 0.7) 95%,
+                rgba(33,33,33,1) 100%
+    );
+}
+
+.fadeleft {
+    margin-left: 30%;
+    height: 100%;
+    width: 70%;
+    position:absolute;
+    background: -webkit-linear-gradient(right, 
+                rgba(33, 33, 33, 0.1) 85%,
+                rgba(33, 33, 33, 0.4) 90%,
+                rgba(33, 33, 33, 0.7) 95%,
+                rgba(33,33,33,1) 100%
+    );
+}
+
+.content-text-right{
+    top: 50%;
+    right: 15%;
+    transform: translate(-15%, -50%);
+    font-size: 140%;
+    align-self: center;
+    margin: 1%;
+}
+
+.content-text-left{
+    top: 50%;
+    left: 15%;
+    transform: translate(15%, -50%);
+    font-size: 140%;
+    align-self: center;
+    margin: 1%;
+}
+
+.footer__conatiner{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link-items{
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    color: white;
 }
 
 @-webkit-keyframes move {
@@ -189,7 +271,7 @@ body{
     .home__container{
         display:flex;   
         flex-direction: column;
-        height: auto;
+        height: 40em;
     }
 
     .name__teaser{
