@@ -110,21 +110,54 @@ p {
     margin-left: 2%;
 }
 
-.sections {
+.projectscontainer {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.projectrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    margin: 3%;
-    margin-bottom: 5%;
+    align-content: stretch;
 }
 
-.sections img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.projectrow>div {
+    flex: 1 1 auto;
+    margin: 2%;
+}
+
+.projectimg img {
+    display: block;
     border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.content-text {
-    padding: 5%;
-    min-width: 30%;
+.projectimg2 img {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projecttext {
+    padding: 1%;
+    min-width: 40%;
+}
+
+.projecttext2 {
+    padding: 1%;
+    min-width: 40%;
 }
 
 .technologies-used {
@@ -142,27 +175,29 @@ p {
     padding: 3%;
 }
 
-.furtherporjectscontainer {
-    align-items: center;
+.furtherproj-container {
     display: flex;
+    flex-flow: row;
+    width: 100%;
     justify-content: space-evenly;
-    padding-top: 2%;
-    margin: 1%;
 }
 
-.furtherproj img {
-    position: relative;
+.furtherproj {
+
+    margin: 5% 0 5% 0;
     width: 28rem;
-    height: auto;
+    height: 20rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("images/PlaceHolder.JPG");
+    background-repeat: space;
+    background-size: 28rem auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.furtherproj p {
+.furtherprojtext {
     text-align: center;
-    transform: translateY(-5.5rem);
-    color: white;
+    transform: translate(0%, 200%);
 }
 
 #furtherprojbtn {
@@ -171,7 +206,7 @@ p {
     border-radius: 5px;
     background-color: white;
     color: black;
-    border: 2px solid #737373;
+    border: 2px solid rgba(21, 16, 139, 0.4);
     padding: 8px 24px;
     font-size: 110%;
     cursor: pointer;
@@ -186,7 +221,6 @@ p {
     border-radius: 5px;
     background: white;
     color: black;
-    border: 2px solid rgba(21, 16, 139, 0.4);
     padding: 8px 24px;
     font-size: 115%;
     cursor: pointer;
@@ -235,7 +269,7 @@ p {
 }
 
 /*------------------------- MOBILE -------------------------*/
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 950px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -345,17 +379,35 @@ p {
         font-size: 100%;
     }
 
-    .sections {
+    .projectrow {
         display: flex;
         flex-direction: column;
-        margin: 3%;
+        flex-wrap: nowrap;
+        justify-content: center;
         align-items: center;
+        align-content: stretch;
     }
 
-    .sections img {
-        height: auto !important;
-        width: 90% !important;
-        margin-left: 5% !important;
+    .projectrow>div {
+        flex: 1 1 auto;
+        margin: 2%;
+    }
+
+    .projectimg2 img {
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        margin: 1%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        order: 1;
+    }
+
+    .projecttext2 {
+        padding: 1%;
+        min-width: 30%;
+        order: 2;
     }
 
     .ytplayer {
@@ -369,8 +421,12 @@ p {
         flex-direction: column;
     }
 
-    .furtherproj {
-        height: fit-content;
+    .furtherproj1 {
+        text-align: center;
+        color: #fff;
+        background-image: url("images/PlaceHolder.JPG");
+        background-color: #efefef;
+        background-repeat: space;
     }
 
     .furtherproj img {
@@ -379,5 +435,13 @@ p {
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+
+    .desciptiontext {
+        left: 50%;
+        top: 50%;
+        transform: translate(-0%, -130%);
+        text-align: center;
+        color: #fff;
     }
 }
