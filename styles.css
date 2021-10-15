@@ -177,27 +177,34 @@ p {
 
 .furtherproj-container {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
 }
 
 .furtherproj {
-
     margin: 5% 0 5% 0;
-    width: 28rem;
-    height: 20rem;
+    width: 24rem;
+    height: 16rem;
     text-align: center;
     color: #fff;
     background-image: url("images/PlaceHolder.JPG");
     background-repeat: space;
     background-size: 28rem auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#lennart {
+    background-image: url("images/Len.artThumbnailBlue.png");
+    background-position: center;
+    background-size: 120%;
 }
 
 .furtherprojtext {
     text-align: center;
-    transform: translate(0%, 200%);
+    transform: translate(0%, 150%);
 }
 
 #furtherprojbtn {
@@ -269,7 +276,7 @@ p {
 }
 
 /*------------------------- MOBILE -------------------------*/
-@media screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -296,7 +303,7 @@ p {
 
     .navbar__menu.active {
         background-color: rgba(255, 255, 255, 0.95);
-        top: 12%;
+        top: 13%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
@@ -415,33 +422,26 @@ p {
         width: 100% !important;
     }
 
-    .furtherporjectscontainer {
+    .furtherproj-container {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
 
-    .furtherproj1 {
+    .furtherproj {
+        margin: 5% 0 5% 0;
+        width: 16rem;
+        height: 10rem;
         text-align: center;
-        color: #fff;
         background-image: url("images/PlaceHolder.JPG");
-        background-color: #efefef;
-        background-repeat: space;
-    }
-
-    .furtherproj img {
-        position: relative;
-        width: 17rem;
-        height: auto;
         border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    .desciptiontext {
-        left: 50%;
-        top: 50%;
-        transform: translate(-0%, -130%);
-        text-align: center;
+    .furtherprojtext {
         color: #fff;
+        text-align: center;
+        transform: translate(0%, 70%);
     }
 }
