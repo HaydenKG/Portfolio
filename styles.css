@@ -235,6 +235,32 @@ p {
         0 6px 20px 0 rgba(21, 16, 139, 0.4);
 }
 
+.recent_technologies {
+    margin: 5% 4% 2% 4%;
+    text-align: center;
+}
+
+.recent_technologies_list {
+    color: #737373;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 300px));
+    justify-content: center;
+    gap: 0px 10px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.recent_technologies_list li::before {
+    content: "\2022";
+    color: rgba(21, 16, 139, 1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 .footer__container {
     margin-top: 5%;
 }
