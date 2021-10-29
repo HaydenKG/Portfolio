@@ -180,6 +180,7 @@ p {
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+    padding-bottom: 2%;
 }
 
 .furtherproj {
@@ -448,10 +449,22 @@ p {
         width: 100% !important;
     }
 
+    .technologies-used {
+        color: #737373;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        margin: 6px 0px 10px;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
     .furtherproj-container {
         align-items: center;
         display: flex;
         flex-direction: column;
+        padding-bottom: 2%;
     }
 
     .furtherproj {
@@ -469,5 +482,22 @@ p {
         color: #fff;
         text-align: center;
         transform: translate(0%, 70%);
+    }
+
+    .recent_technologies {
+        margin: 5% 4% 2% 4%;
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    .recent_technologies_list {
+        color: #737373;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(14px, 150px));
+        justify-content: center;
+        gap: 0px 10px;
+        margin: 20px 0px 0px;
+        list-style: none;
+        font-size: 1.1em;
     }
 }
