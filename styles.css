@@ -1,3 +1,8 @@
+/*Variables*/
+:root {
+    --dark-grey: #212121;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +12,7 @@
 
 body {
     background-color: white;
-    color: #212121;
+    color: var(--dark-grey);
 }
 
 a {
