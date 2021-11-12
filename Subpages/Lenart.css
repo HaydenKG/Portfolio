@@ -1,0 +1,18 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Nunito',
+        sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.returnhome {
+    padding: 2%;
+}

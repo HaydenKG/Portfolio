@@ -145,6 +145,18 @@ p {
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*-----------------make image shadow darker when hovering above it-----------------*/
+
+.projectimg img :hover {
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    box-shadow: 0 6px 12px 0 rgba(63, 45, 45, 0.4),
+        0 8px 22px 0 rgba(0, 0, 0, 0.38);
+}
+
 .projectimg2 img {
     display: block;
     border-radius: 10px;
@@ -194,7 +206,7 @@ p {
     height: 16rem;
     text-align: center;
     color: #fff;
-    background-image: url("images/PlaceHolder.JPG");
+    background-image: url("media/PlaceHolder.JPG");
     background-repeat: space;
     background-size: 28rem auto;
     border-radius: 10px;
@@ -203,7 +215,7 @@ p {
 }
 
 #lennart {
-    background-image: url("images/Len.artThumbnailBlue.png");
+    background-image: url("media/Len.artThumbnailBlue.png");
     background-position: center;
     background-size: 120%;
 }
@@ -477,7 +489,7 @@ p {
         width: 16rem;
         height: 10rem;
         text-align: center;
-        background-image: url("images/PlaceHolder.JPG");
+        background-image: url("media/PlaceHolder.JPG");
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
