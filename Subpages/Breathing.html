@@ -8,28 +8,29 @@
     <title>Breathing exercise</title>
     <link rel="stylesheet" href="Breathing.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="../images/LogoWhite.png">
+    <link rel="icon" href="../media/ThumbLogo.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body onload="breathingcycle">
     <div class="section-container">
         <section>
             <div class="selection_conatiner">
                 <h1>BreathingBreak</h1>
                 <div class="button_selection_container">
-                    <button>Box-breathing</button>
+                    <button
+                        onclick="document.getElementById('boxbreathing_counter').scrollIntoView();">Box-breathing</button>
                     <button>4-3-7-3</button>
                 </div>
             </div>
         </section>
         <section>
             <div class="selection_conatiner">
-                <h1>Box-breathing</h1>
                 <div class="container">
                     <div class="shape"></div>
+                    <p id="boxbreathing_counter" style="position: absolute; z-index: 10; font-size: 2rem;"></p>
                 </div>
             </div>
         </section>
@@ -39,6 +40,7 @@
         <section>
         </section>
     </div>
+    <script src="Breathing.js"> </script>
 </body>
 
 </html>

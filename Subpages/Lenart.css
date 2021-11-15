@@ -5,7 +5,7 @@ body {
     background-color: white;
     font-family: 'Nunito',
         sans-serif;
-    color: white;
+    color: #212121;
 }
 
 a {
@@ -13,6 +13,33 @@ a {
     color: #212121;
 }
 
+pre {
+    font-family: 'Nunito',
+        sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
 .returnhome {
     padding: 2%;
+}
+
+.introduction_container {
+    padding-left: 7.5%;
+    display: flex;
+}
+
+.title {
+    padding-right: 5%;
+}
+
+.description {
+    padding: 0 0% 0% 10%;
+}
+
+.video_container video {
+    padding: 0% 7.5% 2% 7.5%;
 }

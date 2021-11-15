@@ -25,7 +25,7 @@ h1 {
 }
 
 p {
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .navbar {
@@ -202,13 +202,13 @@ p {
 
 .furtherproj {
     margin: 5% 0 5% 0;
-    width: 24rem;
+    width: 26rem;
     height: 16rem;
     text-align: center;
     color: #fff;
-    background-image: url("media/PlaceHolder.JPG");
+    background-image: url("media/BreathingBreakThumbnail.png");
     background-repeat: space;
-    background-size: 28rem auto;
+    background-size: 30rem auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
