@@ -16,6 +16,44 @@ a {
 pre {
     font-family: 'Nunito',
         sans-serif;
+    padding-right: 1%;
+    white-space: pre;
+}
+
+.fadeinarea {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeout;
+    -webkit-animation-name: fadeout;
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        z-index: -1;
+    }
 }
 
 .header {
@@ -42,4 +80,22 @@ pre {
 
 .video_container video {
     padding: 0% 7.5% 2% 7.5%;
+}
+
+@media only screen and (max-width: 950px) {
+    .introduction_container {
+        padding-left: 5%;
+        flex-direction: column;
+    }
+
+    /*----------TODO: Check pre-line not showing up in mobile---_*/
+    .pre {
+        padding-right: 1%;
+        font-family: 'Nunito', sans-serif;
+        white-space: pre-line;
+    }
+
+    .description {
+        padding: 0%;
+    }
 }
