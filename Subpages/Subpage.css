@@ -93,8 +93,7 @@ pre {
         flex-direction: column;
     }
 
-    /*----------TODO: Check pre-line not showing up in mobile---_*/
-    .pre {
+    pre {
         padding-right: 1%;
         font-family: 'Nunito', sans-serif;
         white-space: pre-line;
