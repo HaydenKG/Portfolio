@@ -26,8 +26,8 @@ pre {
     height: 100%;
     position: absolute;
     background-color: white;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-name: fadeout;
@@ -68,6 +68,7 @@ pre {
 .introduction_container {
     padding-left: 7.5%;
     display: flex;
+    justify-content: space-between;
 }
 
 .title {
@@ -75,7 +76,7 @@ pre {
 }
 
 .description {
-    padding: 0 0% 0% 5%;
+    padding: 0 7.5% 0% 0%;
 }
 
 .video_container video {
@@ -101,5 +102,12 @@ pre {
 
     .description {
         padding: 0%;
+    }
+
+    .title img {
+        width: 70%;
+        height: 50%;
+        margin: auto;
+        display: block;
     }
 }

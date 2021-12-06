@@ -299,7 +299,6 @@ p {
     display: grid;
     grid-template-columns: repeat(2, minmax(260px, 300px));
     justify-content: center;
-    gap: 0px 10px;
     margin: 20px 0px 0px;
     overflow: hidden;
     list-style: none;
@@ -325,6 +324,12 @@ p {
     grid-auto-flow: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.madeBy {
+    text-align: center;
+    padding-bottom: 2%;
+    color: var(--dark-grey);
 }
 
 @-webkit-keyframes move {
