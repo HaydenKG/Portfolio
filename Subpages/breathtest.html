@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing exercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../media/ThumbLogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="display: flex;
+    margin: auto; 
+    align-items: center;
+    flex-direction: column;
+">
+
+    <h1>Welcome to the js sandbox testpage</h1>
+    <button type="button" onclick="start()">Start counter</button>
+    <p id="counter"></p>
+
+</body>
+
+<script>
+    var displaycounter = document.getElementById("counter");
+    let seconds = 0;
+    let counter = 0;
+    let cycle = 0;
+    let rounds = 0;
+
+    function start() {
+        displaycounter = seconds;
+        setInterval(breathingcycle, 1000);
+    }
+
+    function breathingcycle() {
+        console.log(rounds);
+        if (rounds >= 3) {
+            displaycounter.innerHTML = "Finished 3 rounds";
+            clearInterval(breathingcycle);
+        }
+
+        if (cycle == 16) {
+            cycle = 0;
+            rounds++;
+        }
+
+        if (cycle < 4) {
+            counter++;
+            displaycounter.innerHTML = "In for <br /> &nbsp; &nbsp;" + counter;
+        }
+        if (cycle >= 4 &&
+            cycle < 9 || cycle > 11 && cycle < 15) displaycounter.innerHTML = "hold it";
+        if (cycle > 7 && cycle < 12) {
+            displaycounter.innerHTML = "Out for <br /> &nbsp; &ensp;" + counter;
+            counter--;
+        }
+        cycle++;
+    }
+</script>
+
+</html>

@@ -53,8 +53,8 @@ h1 {
 }
 
 .button_selection_container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 180px));
+    /*display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 180px));*/
 }
 
 .button_selection_container button {
@@ -134,7 +134,7 @@ h1 {
     }
 
     100% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
         height: 200px;
         width: 200px;
