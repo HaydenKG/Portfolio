@@ -242,7 +242,7 @@ p {
     height: 16rem;
     text-align: center;
     color: #fff;
-    background-image: url("media/BreathingBreakThumbnail.png");
+    background-image: url("media/PP1.png");
     background-repeat: space;
     background-size: 30rem auto;
     border-radius: 10px;
@@ -542,7 +542,6 @@ p {
         width: 16rem;
         height: 10rem;
         text-align: center;
-        background-image: url("media/PlaceHolder.JPG");
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -23,7 +23,7 @@ pre {
 .fadeinarea {
     z-index: 10;
     width: 100%;
-    height: 200%;
+    height: 150%;
     position: absolute;
     background-color: white;
     -webkit-animation-duration: 2s;
@@ -73,6 +73,7 @@ pre {
 
 .title {
     padding-right: 5%;
+    font-size: 1.2rem;
 }
 
 .description {
