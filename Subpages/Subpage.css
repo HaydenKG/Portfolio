@@ -76,6 +76,12 @@ pre {
     font-size: 1.2rem;
 }
 
+.title img {
+    height: 400px;
+    width: 300px;
+    border-radius: 8px;
+}
+
 .description {
     padding: 0 7.5% 0% 0%;
 }
@@ -106,8 +112,6 @@ pre {
     }
 
     .title img {
-        width: 70%;
-        height: 50%;
         margin: auto;
         display: block;
     }

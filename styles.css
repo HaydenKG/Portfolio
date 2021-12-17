@@ -17,7 +17,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #212121;
+    color: var(--dark-grey);
 }
 
 h1 {
@@ -133,9 +133,9 @@ p {
 
 .slide {
     opacity: 0;
-    height: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    //height: 100%;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     animation: slideIn 1s ease 3s forwards;
     animation-delay: calc(var(--order)*100ms);
 }
@@ -143,7 +143,7 @@ p {
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateX(+500px);
+        transform: translateX(+200px);
     }
 
     to {
