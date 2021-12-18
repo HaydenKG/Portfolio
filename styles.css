@@ -13,6 +13,7 @@
 body {
     background-color: white;
     color: var(--dark-grey);
+    overflow-x: hidden;
 }
 
 a {
@@ -71,7 +72,6 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    /*position: sticky;*/
     top: 0;
     z-index: 999;
 }
@@ -118,7 +118,6 @@ p {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr 1fr auto;
     text-align: center;
     align-items: center;
 }
@@ -126,15 +125,29 @@ p {
 .name__teaser {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #212121;
+}
+
+.scrolldownpointer {
+    height: 40px;
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrolldownpointer span {
+    width: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--dark-grey);
+    margin: 6px;
 }
 
 .slide {
     opacity: 0;
-    //height: 100%;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    /*height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     animation: slideIn 1s ease 3s forwards;
     animation-delay: calc(var(--order)*100ms);
@@ -148,7 +161,7 @@ p {
 
     to {
         opacity: 1;
-        transform: translateX(10);
+        transform: translateX(10px);
     }
 }
 
@@ -347,40 +360,13 @@ p {
     grid-auto-flow: column;
     align-items: center;
     justify-content: space-around;
+    font-size: 1.2em;
 }
 
 .madeBy {
     text-align: center;
     padding-bottom: 2%;
     color: var(--dark-grey);
-}
-
-@-webkit-keyframes move {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes move {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
 }
 
 /*------------------------- MOBILE -------------------------*/
@@ -477,17 +463,17 @@ p {
 
     .home__container {
         display: flex;
-        flex-direction: column;
-        height: 50vh;
+        justify-content: center;
+        height: 60vh;
         margin-top: 25%;
     }
 
     .name__teaser {
         display: flex;
-        width: 80%;
+        width: 90%;
         padding-bottom: 10%;
         height: 100%;
-        font-size: 4vw;
+        font-size: 1.2em;
     }
 
     .separator h2 {
