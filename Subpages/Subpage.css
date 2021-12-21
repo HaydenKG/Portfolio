@@ -17,7 +17,6 @@ a {
 pre {
     font-family: 'Nunito',
         sans-serif;
-    padding-right: 1%;
     white-space: pre;
 }
 
@@ -68,6 +67,7 @@ pre {
 
 .introduction_container {
     padding-left: 7.5%;
+    padding-right: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr auto;
 }

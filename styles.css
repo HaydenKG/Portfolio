@@ -1,6 +1,7 @@
 /*Variables*/
 :root {
     --dark-grey: #212121;
+    --ocean: #001653;
 }
 
 * {
@@ -17,8 +18,15 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: var(--dark-grey);
+    color: var(--ocean);
+    font-size: 1.2em;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 500ms ease;
+}
+
+a:hover {
+    text-decoration: underline solid var(--ocean);
+    text-decoration-thickness: 0.08em;
 }
 
 h1 {
@@ -27,6 +35,24 @@ h1 {
 
 p {
     line-height: 1.2;
+    font-size: 1.2em;
+}
+
+.arrow {
+    border: solid var(--ocean);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transition: 500ms ease;
+}
+
+.arrow {
+    transform: translateX(+20px);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
 .fadeinarea {
@@ -125,23 +151,8 @@ p {
 .name__teaser {
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
-    color: #212121;
-}
-
-.scrolldownpointer {
-    height: 40px;
-    width: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.scrolldownpointer span {
-    width: 10px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: var(--dark-grey);
-    margin: 6px;
+    font-size: 1.4em;
+    color: var(--dark-grey);
 }
 
 .slide {
@@ -175,7 +186,7 @@ p {
 .separator::after {
     content: '';
     flex: 1;
-    border-bottom: 3px solid #212121;
+    border-bottom: 3px solid var(--dark-grey);
     border-radius: 3px;
 }
 
@@ -294,7 +305,7 @@ p {
 
 .furtherprojtext {
     text-align: center;
-    transform: translate(0%, 150%);
+    transform: translate(0%, 80%);
 }
 
 #furtherprojbtn {
@@ -392,7 +403,7 @@ p {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #212121;
+        background: var(--dark-grey);
     }
 
     .navbar__menu.active {
@@ -537,6 +548,7 @@ p {
         margin: 6px 0px 10px;
         list-style: none;
         justify-content: space-evenly;
+        font-size: 1.1em;
     }
 
     .furtherproj-container {
@@ -558,8 +570,7 @@ p {
 
     .furtherprojtext {
         color: #fff;
-        text-align: center;
-        transform: translate(0%, 70%);
+        transform: translate(0%, 10%);
     }
 
     .recent_technologies {
