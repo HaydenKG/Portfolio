@@ -1,0 +1,71 @@
+<!--Welcome to my code-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hayden</title>
+    <link rel="stylesheet" href="Subpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../media/ThumbLogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="fadeinarea"></div>
+    <div class="header">
+        <div class="returnhome">
+            <a href="../index.html">
+                <img src="../media/ThumbLogo.png" alt="Logo" width="70px" height="70px" id="navbar__logo" />
+            </a>
+        </div>
+    </div>
+
+    <div class="introduction_container">
+        <div class="title">
+            <h1>stressor data visualization <br>
+                in a digital 3D-twin</h1>
+            <p>Thesis and internship with the <br> Fraunhofer-IGD</p>
+            <p>2021</p>
+        </div>
+
+        <div class="description">
+            <pre>
+            Temperature, noise, air quality and humidity can be considered as stress 
+            factors (stressors) in today's office environments.
+            Measuring these stressors can help to gather insights or analyze situations.
+            With that knowledge, measures to improve the environmental effects on employees 
+            can be taken.
+            Though when one has all the measured data it can be hard to see right away if 
+            there is an unsuitable value or in which location sensor 1 might be in the building.
+            For that matter data visualization in a digital twin can be used to 
+            interpret the data faster and locate it more easily. 
+
+            Though the questions arise, how this data can be visualized? 
+            What to do if one has multiple data sets of different sensors? 
+            And how can one visualize all or some of them at the same time, without having 
+            to check them individually? 
+
+            The following WebGL demo answers these questions.
+            It's only a sample of the project I developed during my internship and Bachelor 
+            thesis with the Fraunhofer-Institut for Computer Graphics Research in Rostock (Ger).
+            
+            In an original setting the data would be collected with various sensors in the 
+            real building, sent to a server and be pulled into the program with a web request. 
+            In this demo-case the data is generated artificially.
+
+            Disclaimer: This demo does not contain content that is rightly owned by the 
+            Fraunhofer-IGD. 
+            Copyright: Hayden Kulle Gutoskie
+            </pre>
+        </div>
+    </div>
+    <iframe src="VizGL/index.html" style="border:0px #000000 none; padding-left: 2.5%;" name="Stressor-visualization"
+        scrolling="no" frameborder="1" height="820px" width="95%;"></iframe>
+    <div class="footer"></div>
+</body>
+
+</html>

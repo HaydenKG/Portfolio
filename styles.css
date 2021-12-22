@@ -1,7 +1,7 @@
 /*Variables*/
 :root {
     --dark-grey: #212121;
-    --ocean: #001653;
+    --ocean: #001f74;
 }
 
 * {
@@ -179,7 +179,7 @@ p {
 .separator {
     display: flex;
     align-items: center;
-    padding: 5%;
+    padding: 0% 20% 5% 20%;
 }
 
 .separator::before,
