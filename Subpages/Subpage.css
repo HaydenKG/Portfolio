@@ -96,6 +96,10 @@ pre {
     height: 40px;
 }
 
+.mobile_info {
+    display: none;
+}
+
 @media only screen and (max-width: 950px) {
     .introduction_container {
         padding-left: 5%;
@@ -117,5 +121,10 @@ pre {
         margin: auto;
         display: block;
         order: 2;
+    }
+
+    .mobile_info {
+        font-style: italic;
+        display: grid;
     }
 }
