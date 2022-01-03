@@ -508,12 +508,12 @@ p {
 
     .projectimg img {
         display: grid;
+        grid-template-columns: auto;
         place-items: center;
-        margin: 0;
+        margin-left: 10%;
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin-right: 1%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -521,23 +521,18 @@ p {
     .projectimg2 img {
         display: block;
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
         order: 1;
-        margin: 0;
+        margin-left: 10%;
     }
 
     .projecttext2 {
         padding: 1%;
         min-width: 30%;
         order: 2;
-    }
-
-    .ytplayer {
-        height: auto !important;
-        width: 100% !important;
     }
 
     .technologies-used {
@@ -598,5 +593,35 @@ p {
         margin: 20px 0px 0px;
         list-style: none;
         font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ytplayer {
+        height: 100% !important;
+        width: auto;
+    }
+
+    .projectimg img {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        margin-left: 0%;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .projectimg2 img {
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        order: 1;
+        margin-left: 0%;
     }
 }
