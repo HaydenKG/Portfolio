@@ -54,6 +54,34 @@
                 transform: translateX(30);
             }
         }
+
+        .furtherprojects {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            text-align: center;
+        }
+
+        .project {
+            display: flex;
+            justify-content: center;
+        }
+
+        .furtherprojbackground {
+            width: 26rem;
+            height: 16rem;
+            color: black;
+            background-position: center;
+            background-repeat: space;
+            background-size: 30rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .furtherprojtext {
+            color: azure;
+            transform: translateY(100%);
+        }
     </style>
 </head>
 
@@ -66,6 +94,31 @@
         <div class="slide" style="--order: 2; background-color: blue;"></div>
         <div class="slide" style="--order: 3; background-color: blueviolet;"></div>
         <div class="slide" style="--order: 4; background-color: turquoise;"></div>
+    </div>
+
+    <div class="furtherprojects">
+        <div class="project">
+            <a href="Subpages/Lenart.html" style="text-decoration: none;">
+                <div class="furtherprojbackground" style="
+            background-image: url(' ../media/Len.artThumbnailBlue.png'); ">
+                    <div class="furtherprojtext">
+                        <h1>Len.art</h1>
+                        <p>production of a promovideo</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="Subpages/Lenart.html" style="text-decoration: none;">
+                <div class="furtherprojbackground" style="
+            background-image: url(' ../media/PP1.png');">
+                    <div class="furtherprojtext">
+                        <h1>Pin's escape</h1>
+                        <p>3D game</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </body>
 

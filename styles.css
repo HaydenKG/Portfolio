@@ -11,10 +11,15 @@
     font-family: 'Nunito', sans-serif;
 }
 
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     color: var(--dark-grey);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -276,20 +281,22 @@ p {
 }
 
 .furtherproj-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    text-align: center;
 }
 
-.furtherproj {
-    margin: 5% 0 5% 0;
+.project {
+    display: flex;
+    justify-content: center;
+}
+
+.furtherprojbackground {
     width: 26rem;
     height: 16rem;
-    text-align: center;
-    color: #fff;
-    background-image: url("media/PP1.png");
+    color: black;
+    background-position: center;
     background-repeat: space;
     background-size: 30rem auto;
     border-radius: 10px;
@@ -297,15 +304,9 @@ p {
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#lennart {
-    background-image: url("media/Len.artThumbnailBlue.png");
-    background-position: center;
-    background-size: 120%;
-}
-
 .furtherprojtext {
-    text-align: center;
-    transform: translate(0%, 80%);
+    color: white;
+    transform: translateY(100%);
 }
 
 #furtherprojbtn {
@@ -555,22 +556,31 @@ p {
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding-bottom: 2%;
     }
 
-    .furtherproj {
-        margin: 5% 0 5% 0;
-        width: 16rem;
-        height: 10rem;
-        text-align: center;
+    .project {
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+    }
+
+    .furtherprojbackground {
+        padding-bottom: 2%;
+        width: 20rem;
+        height: 12rem;
+        color: black;
+        background-position: center;
+        background-repeat: space;
+        background-size: 30rem auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .furtherprojtext {
-        color: #fff;
-        transform: translate(0%, 10%);
+        font-size: 80%;
+        color: white;
+        transform: translateY(100%);
     }
 
     .recent_technologies {
