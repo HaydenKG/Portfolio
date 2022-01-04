@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Hayden</title>
+    <title>Basic photography rules</title>
     <link rel="stylesheet" href="Subpage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="../media/ThumbLogo.png">
@@ -18,8 +18,10 @@
         header {
             height: 100vh;
             display: flex;
-            justify-content: center;
+            text-align: center;
             align-items: center;
+            margin: 0 20% 0 20%;
+            font-size: 1em;
         }
 
         .section {
@@ -31,6 +33,7 @@
 
         .about-title {
             display: flex;
+            flex-direction: column;
             width: 50%;
             height: 100vh;
             justify-content: center;
@@ -40,6 +43,17 @@
 
         .about-title2 {
             display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0 !important;
+        }
+
+        .about-title3 {
+            display: flex;
+            flex-direction: column;
             width: 50%;
             height: 100vh;
             justify-content: center;
@@ -54,9 +68,62 @@
         .about-pages div {
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .ruleofthirds1 {
+            background-image: url(../media/Photography/RuleOfThirdsNotApplied.png);
+        }
+
+        .ruleofthirds1:hover {
+            background-image:
+                url(../media/Photography/RuleOfThirdsApplied.png), url(../media/Photography/RuleOfThirdsNotApplied.png);
+        }
+
+        .ruleofthirds2 {
+            background-image: url(../media/Photography/RuleOfThirdsNotApplied2.png);
+        }
+
+        .ruleofthirds2:hover {
+            background-image: url(../media/Photography/RuleOfThirdsApplied2.png),
+                url(../media/Photography/RuleOfThirdsNotApplied2.png);
+        }
+
+        .symmetry1 {
+            background-image: url(../media/Photography/SymmetryNPatterns1.png);
+        }
+
+        .symmetry1:hover {
+            background-image: url(../media/Photography/SymmetryWMask1.webp),
+                url(../media/Photography/SymmetryNPatterns1.png);
+        }
+
+        .symmetry2 {
+            background-image: url(../media/Photography/SymmetryNPatterns2.png);
+        }
+
+        .symmetry2:hover {
+            background-image: url(../media/Photography/SymmetryWMask2.webp),
+                url(../media/Photography/SymmetryNPatterns2.png);
+        }
+
+        .preframing1 {
+            background-image: url(../media/Photography/Preframing1.png);
+        }
+
+        .preframing1:hover {
+            background-image: url(../media/Photography/PreframingMask1.webp),
+                url(../media/Photography/Preframing1.png);
+        }
+
+        .preframing2 {
+            background-image: url(../media/Photography/Preframing2.png);
+        }
+
+        .preframing2:hover {
+            background-image: url(../media/Photography/PreframingMask2.webp),
+                url(../media/Photography/Preframing2.png);
         }
 
         footer {
@@ -64,6 +131,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
     </style>
 </head>
@@ -77,46 +145,82 @@
         </div>
     </div>
     <header>
-        <h1>
-            Here are three photography rules I like to use
-        </h1>
+        <h2>
+            Photography is a hobby that I picked up after graduating from high school in order to learn something new
+            and be able to take amazing images on my journey through New Zealand back in 2018. I like the possibilities
+            and freedom one can have with taking and manipulating the image.<br>
+            3 rules I like to apply are the following
+        </h2>
     </header>
 
     <section class="section">
         <div class="about-title">
-            grid of 3s
+            <h2>
+                Rule of thirds
+            </h2>
+            <pre>
+                Dividing the frame into three equal parts.
+                Hover over the image to see the rule applied.
+            </pre>
         </div>
         <div class="about-pages">
             <div style="
-            background-image: url('../media/Len.artThumbnailBlue.png');">
+            background-image: url('../media/Photography/RuleOfThirds.png');">
             </div>
-            <div style="
-            background-image: url('../media/StressorVizThumbnail.png');">
+            <div class="ruleofthirds1">
             </div>
-            <div style="
-            background-image: url('../media/Vorstellgrafik2.png');">
+            <div class="ruleofthirds2">
             </div>
         </div>
     </section>
     <section class="section">
         <div class="about-title2">
-            preframing
+            <h2>
+                Symmetry and patterns
+            </h2>
+            <pre>
+                Using existing symmetry and patterns.
+                Hover over the image to see the rule applied.
+            </pre>
         </div>
         <div class="about-pages">
             <div style="
-            background-image: url('../media/Hayden-img.jpg');">
+            background-image: url('../media/Photography/SymmetryNPatterns.png');">
             </div>
-            <div style="
-            background-image: url('../media/PP1.png');">
+            <div class="symmetry1">
             </div>
-            <div style="background-image: url('../media/ThumbLogo.png');">
+            <div class="symmetry2">
             </div>
         </div>
-
+    </section>
+    <section class=" section">
+        <div class="about-title3">
+            <h2>
+                Preframing
+            </h2>
+            <pre>
+                Using objects in the foreground to frame the subject.
+                Hover over the image to see the rule applied.
+            </pre>
+        </div>
+        <div class="about-pages">
+            <div style="
+            background-image: url('../media/Photography/Preframing.png');">
+            </div>
+            <div class="preframing1">
+            </div>
+            <div class="preframing2">
+            </div>
+        </div>
     </section>
 
     <footer>
-        that's it for now
+        <h2>
+            There are many more rules. <br>
+            Naturally sometimes a number of them are applied at the same time. <br>
+            Though occasionally the best rule is to break the rules and do something different. <br>
+            For more inspiration you can check out ..
+        </h2>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
@@ -131,7 +235,7 @@
                     triggerHook: 0
                 })
                 .setPin('.about-title')
-                .addIndicators()
+                //                .addIndicators()
                 .addTo(controller);
 
             const controller2 = new ScrollMagic.Controller();
@@ -142,8 +246,17 @@
                     triggerHook: 0
                 })
                 .setPin('.about-title2')
-                .addIndicators()
                 .addTo(controller2);
+
+            const controller3 = new ScrollMagic.Controller();
+
+            new ScrollMagic.Scene({
+                    duration: '200%',
+                    triggerElement: '.about-title3',
+                    triggerHook: 0
+                })
+                .setPin('.about-title3')
+                .addTo(controller3);
         }
         console.log("called");
         splitScroll();
