@@ -15,6 +15,40 @@
         rel="stylesheet">
 
     <style>
+        .fadeinarea {
+            z-index: 10;
+            width: 100%;
+            height: 300%;
+            position: absolute;
+            background-color: white;
+            -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+            animation-name: fadeout;
+            -webkit-animation-name: fadeout;
+        }
+
+        @-webkit-keyframes fadeout {
+            0% {
+                opacity: 100%;
+            }
+
+            100% {
+                opacity: 0%;
+                z-index: -5;
+            }
+        }
+
+        @keyframes fadeout {
+            0% {
+                opacity: 100%;
+            }
+
+            100% {
+                opacity: 0%;
+                z-index: -5;
+            }
+        }
+
         header {
             height: 100vh;
             display: flex;
@@ -73,57 +107,58 @@
         }
 
         .ruleofthirds1 {
-            background-image: url(../media/Photography/RuleOfThirdsNotApplied.png);
+            background-image: url(../media/Photography/RuleOfThirdsNotApplied.webp);
         }
 
         .ruleofthirds1:hover {
-            background-image:
-                url(../media/Photography/RuleOfThirdsApplied.png), url(../media/Photography/RuleOfThirdsNotApplied.png);
+            background-image: url(../media/Photography/RuleOfThirdsApplied.webp),
+                url(../media/Photography/RuleOfThirdsNotApplied.webp);
         }
 
         .ruleofthirds2 {
-            background-image: url(../media/Photography/RuleOfThirdsNotApplied2.png);
+            background-image: url(../media/Photography/RuleOfThirdsNotApplied2.webp);
         }
 
         .ruleofthirds2:hover {
-            background-image: url(../media/Photography/RuleOfThirdsApplied2.png),
-                url(../media/Photography/RuleOfThirdsNotApplied2.png);
+            background-image: url(../media/Photography/RuleOfThirdsApplied2.webp),
+                url(../media/Photography/RuleOfThirdsNotApplied2.webp);
         }
 
         .symmetry1 {
-            background-image: url(../media/Photography/SymmetryNPatterns1.png);
+            background-image: url(../media/Photography/SymmetryNPatterns1.webp);
         }
 
         .symmetry1:hover {
             background-image: url(../media/Photography/SymmetryWMask1.webp),
-                url(../media/Photography/SymmetryNPatterns1.png);
+                url(../media/Photography/SymmetryNPatterns1.webp);
         }
 
         .symmetry2 {
-            background-image: url(../media/Photography/SymmetryNPatterns2.png);
+            background-image: url(../media/Photography/SymmetryNPatterns2.webp);
         }
 
         .symmetry2:hover {
             background-image: url(../media/Photography/SymmetryWMask2.webp),
-                url(../media/Photography/SymmetryNPatterns2.png);
+                url(../media/Photography/SymmetryNPatterns2.webp);
         }
 
         .preframing1 {
-            background-image: url(../media/Photography/Preframing1.png);
+            background-image: url(../media/Photography/Preframing1.webp);
         }
 
         .preframing1:hover {
             background-image: url(../media/Photography/PreframingMask1.webp),
-                url(../media/Photography/Preframing1.png);
+                url(../media/Photography/Preframing1.webp);
+
         }
 
         .preframing2 {
-            background-image: url(../media/Photography/Preframing2.png);
+            background-image: url(../media/Photography/Preframing2.webp);
         }
 
         .preframing2:hover {
             background-image: url(../media/Photography/PreframingMask2.webp),
-                url(../media/Photography/Preframing2.png);
+                url(../media/Photography/Preframing2.webp);
         }
 
         footer {
@@ -137,6 +172,7 @@
 </head>
 
 <body>
+    <div class="fadeinarea"></div>
     <div class="header">
         <div class="returnhome">
             <a href="../index.html">
