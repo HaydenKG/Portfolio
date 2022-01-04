@@ -285,6 +285,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .project {
@@ -307,6 +308,16 @@ p {
 .furtherprojtext {
     color: white;
     transform: translateY(100%);
+    text-align: center;
+}
+
+.furtherprojectshidden {
+    display: none;
+    margin-bottom: 3%;
+}
+
+.furtherprojectshidden.active {
+    display: grid;
 }
 
 #furtherprojbtn {
@@ -331,7 +342,6 @@ p {
     background: white;
     color: black;
     padding: 8px 24px;
-    font-size: 115%;
     cursor: pointer;
     box-shadow: 0 4px 10px 0 rgba(21, 16, 139, 0.3),
         0 6px 20px 0 rgba(21, 16, 139, 0.4);

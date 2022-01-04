@@ -55,17 +55,22 @@
             text-align: center;
             align-items: center;
             margin: 0 20% 0 20%;
-            font-size: 1em;
+            font-size: .9em;
         }
 
-        .section {
+        section {
             /*depending on how many pages you have pages*100*/
             height: 300vh;
             display: flex;
             margin-bottom: 5%;
         }
 
-        .about-title {
+        pre {
+            text-align: center;
+            margin-right: 10%;
+        }
+
+        .ruleof3 {
             display: flex;
             flex-direction: column;
             width: 50%;
@@ -75,7 +80,7 @@
             margin: 0 !important;
         }
 
-        .about-title2 {
+        .symmetry {
             display: flex;
             flex-direction: column;
             width: 50%;
@@ -85,7 +90,7 @@
             margin: 0 !important;
         }
 
-        .about-title3 {
+        .framing {
             display: flex;
             flex-direction: column;
             width: 50%;
@@ -95,11 +100,11 @@
             margin: 0 !important;
         }
 
-        .about-pages {
+        .images {
             width: 50%;
         }
 
-        .about-pages div {
+        .images div {
             height: 100vh;
             display: flex;
             background-position: center;
@@ -142,21 +147,21 @@
                 url(../media/Photography/SymmetryNPatterns2.webp);
         }
 
-        .preframing1 {
+        .framing1 {
             background-image: url(../media/Photography/Preframing1.webp);
         }
 
-        .preframing1:hover {
+        .framing1:hover {
             background-image: url(../media/Photography/PreframingMask1.webp),
                 url(../media/Photography/Preframing1.webp);
 
         }
 
-        .preframing2 {
+        .framing2 {
             background-image: url(../media/Photography/Preframing2.webp);
         }
 
-        .preframing2:hover {
+        .framing2:hover {
             background-image: url(../media/Photography/PreframingMask2.webp),
                 url(../media/Photography/Preframing2.webp);
         }
@@ -189,17 +194,19 @@
         </h2>
     </header>
 
-    <section class="section">
-        <div class="about-title">
+    <section>
+        <div class="ruleof3">
             <h2>
                 Rule of thirds
             </h2>
             <pre>
                 Dividing the frame into three equal parts.
+                Aligning items within that frame or where the lines meet
+                can help to align the composition.
                 Hover over the image to see the rule applied.
             </pre>
         </div>
-        <div class="about-pages">
+        <div class="images">
             <div style="
             background-image: url('../media/Photography/RuleOfThirds.png');">
             </div>
@@ -209,17 +216,18 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="about-title2">
+    <section>
+        <div class="symmetry">
             <h2>
                 Symmetry and patterns
             </h2>
             <pre>
-                Using existing symmetry and patterns.
+                Using existing symmetry and patterns can help
+                to guide the viewers attention and align composition.
                 Hover over the image to see the rule applied.
             </pre>
         </div>
-        <div class="about-pages">
+        <div class="images">
             <div style="
             background-image: url('../media/Photography/SymmetryNPatterns.png');">
             </div>
@@ -229,23 +237,25 @@
             </div>
         </div>
     </section>
-    <section class=" section">
-        <div class="about-title3">
+    <section>
+        <div class="framing">
             <h2>
-                Preframing
+                Framing
             </h2>
             <pre>
                 Using objects in the foreground to frame the subject.
+                A frame can help to separate the image therefore adding depth. 
+                It can also hide unwanted objects and guide the eye.
                 Hover over the image to see the rule applied.
             </pre>
         </div>
-        <div class="about-pages">
+        <div class="images">
             <div style="
             background-image: url('../media/Photography/Preframing.png');">
             </div>
-            <div class="preframing1">
+            <div class="framing1">
             </div>
-            <div class="preframing2">
+            <div class="framing2">
             </div>
         </div>
     </section>
@@ -260,17 +270,17 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>-->
     <script>
         function splitScroll() {
             const controller = new ScrollMagic.Controller();
 
             new ScrollMagic.Scene({
                     duration: '200%',
-                    triggerElement: '.about-title',
+                    triggerElement: '.ruleof3',
                     triggerHook: 0
                 })
-                .setPin('.about-title')
+                .setPin('.ruleof3')
                 //                .addIndicators()
                 .addTo(controller);
 
@@ -278,20 +288,20 @@
 
             new ScrollMagic.Scene({
                     duration: '200%',
-                    triggerElement: '.about-title2',
+                    triggerElement: '.symmetry',
                     triggerHook: 0
                 })
-                .setPin('.about-title2')
+                .setPin('.symmetry')
                 .addTo(controller2);
 
             const controller3 = new ScrollMagic.Controller();
 
             new ScrollMagic.Scene({
                     duration: '200%',
-                    triggerElement: '.about-title3',
+                    triggerElement: '.framing',
                     triggerHook: 0
                 })
-                .setPin('.about-title3')
+                .setPin('.framing')
                 .addTo(controller3);
         }
         console.log("called");
