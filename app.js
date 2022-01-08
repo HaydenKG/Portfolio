@@ -2,6 +2,7 @@ const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 const furtherprojbtn = document.querySelector('#furtherprojbtn')
 const furtherprojectsexpand = document.querySelector('.furtherprojectshidden')
+
 let clicked = false;
 
 menu.addEventListener('click', function () {
