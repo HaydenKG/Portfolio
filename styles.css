@@ -354,7 +354,9 @@ p {
     z-index: 1;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 4%;
     justify-content: space-evenly;
     opacity: 1;
     max-height: 100%;
