@@ -15,12 +15,8 @@
     font-family: 'Nunito', sans-serif;
 }
 
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
 body {
-    background-color: white;
+    background-color: #fff;
     color: var(--dark-grey);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -35,7 +31,7 @@ a {
 
 a:hover {
     text-decoration: underline solid var(--ocean);
-    text-decoration-thickness: 0.08em;
+    text-decoration-thickness: .08em;
 }
 
 h1 {
@@ -71,8 +67,8 @@ p {
     height: 350%;
     position: absolute;
     background-color: white;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-name: fadeout;
@@ -109,7 +105,7 @@ p {
     align-items: center;
     font-size: 1.2rem;
     top: 0;
-    z-index: 99;
+    z-index: 2;
 }
 
 .navbar__logo {
@@ -141,7 +137,7 @@ p {
 }
 
 .navbar__links {
-    color: black;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,9 +163,6 @@ p {
 
 .slide {
     opacity: 0;
-    /*height: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     animation: slideIn 1s ease 3s forwards;
     animation-delay: calc(var(--order)*100ms);
 }
@@ -189,7 +182,7 @@ p {
 .separator {
     display: flex;
     align-items: center;
-    padding: 0% 20% 5% 20%;
+    padding: 0 20% 5% 20%;
 }
 
 .separator::before,
@@ -237,8 +230,6 @@ p {
     box-shadow: var(--shadow);
     transition: all .25s ease-in-out;
 }
-
-/*-----------------todo: make image shadow darker when hovering above it-----------------*/
 
 .projectimg img:hover {
     display: block;
@@ -309,7 +300,7 @@ p {
 .furtherprojbackground {
     width: 26rem;
     height: 16rem;
-    color: black;
+    color: #000;
     background-position: center;
     background-repeat: space;
     background-size: 30rem auto;
@@ -319,9 +310,7 @@ p {
 }
 
 .furtherprojbackground:hover {
-    width: 26rem;
-    height: 16rem;
-    color: black;
+    color: #000;
     background-position: center;
     background-repeat: space;
     background-size: 30rem auto;
@@ -330,7 +319,7 @@ p {
 }
 
 .furtherprojtext {
-    color: white;
+    color: #fff;
     transform: translateY(100%);
     text-align: center;
 }
@@ -341,7 +330,7 @@ p {
     z-index: -5;
     margin-bottom: 3%;
     opacity: 0;
-    transition: all 0.3s linear;
+    transition: all .3s linear;
     max-height: 0;
 }
 
@@ -355,7 +344,6 @@ p {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     row-gap: 4%;
     justify-content: space-evenly;
     opacity: 1;
@@ -368,11 +356,11 @@ p {
     border-radius: 5px;
     background-color: white;
     color: black;
-    border: 2px solid rgba(21, 16, 139, 0.4);
+    border: 2px solid rgba(21, 16, 139, .4);
     padding: 8px 24px;
     font-size: 110%;
     cursor: pointer;
-    transition-duration: 0.4s;
+    transition-duration: .4s;
     box-shadow: var(--shadow);
 }
 
@@ -384,12 +372,11 @@ p {
     color: black;
     padding: 8px 24px;
     cursor: pointer;
-    box-shadow: 0 4px 10px 0 rgba(21, 16, 139, 0.3),
-        0 6px 20px 0 rgba(21, 16, 139, 0.4);
+    box-shadow: var(--hovershadow);
 }
 
 .recent_technologies {
-    margin: 5% 4% 2% 4%;
+    margin: 5% 4% 2%;
     text-align: center;
 }
 
@@ -434,6 +421,7 @@ p {
 
 /*------------------------- MOBILE -------------------------*/
 @media only screen and (max-width: 950px) {
+
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -452,17 +440,17 @@ p {
         position: absolute;
         top: -1000px;
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: all .5s ease;
         height: 50vh;
         z-index: -1;
         background: var(--dark-grey);
     }
 
     .navbar__menu.active {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: rgba(255, 255, 255, .95);
         top: 13%;
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all .5s ease;
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
@@ -472,7 +460,7 @@ p {
         .navbar__menu.active {
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, .5);
         }
 
         .warning {
@@ -484,7 +472,7 @@ p {
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease-in-out;
+        transition: all .3s ease-in-out;
         background: #fff;
     }
 
@@ -565,8 +553,18 @@ p {
         border-radius: 10px;
         width: 80%;
         height: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: var(--shadow);
+    }
+
+    .projectimg img:hover{
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        margin-left: 10%;
+        border-radius: 10px;
+        width: 80%;
+        height: auto;
+        box-shadow: var(--hovershadow);
     }
 
     .projectimg2 img {
@@ -574,8 +572,17 @@ p {
         border-radius: 10px;
         width: 80%;
         height: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: var(--shadow);
+        order: 1;
+        margin-left: 10%;
+    }
+
+    .projectimg2 img:hover {
+        display: block;
+        border-radius: 10px;
+        width: 80%;
+        height: auto;
+        box-shadow: var(--hovershadow);
         order: 1;
         margin-left: 10%;
     }
@@ -619,8 +626,13 @@ p {
         background-repeat: space;
         background-size: 30rem auto;
         border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: var(--shadow);
+    }
+
+    .furtherprojbackground:hover {
+        padding-bottom: 2%;
+        width: 20rem;
+        height: 12rem;
     }
 
     .furtherprojtext {
@@ -641,13 +653,13 @@ p {
         grid-template-columns: repeat(2, minmax(14px, 150px));
         justify-content: center;
         gap: 0px 10px;
-        margin: 20px 0px 0px;
+        margin: 20px 0px;
         list-style: none;
         font-size: 1.1em;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
     .ytplayer {
         height: 100% !important;
         width: auto;
@@ -657,12 +669,22 @@ p {
         display: grid;
         grid-template-columns: auto;
         place-items: center;
-        margin-left: 0%;
+        margin-left: 0;
         border-radius: 10px;
         width: 100%;
         height: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: var(--shadow);
+    }
+
+    .projectimg img:hover {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        margin-left: 0;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        box-shadow: var(--hovershadow);
     }
 
     .projectimg2 img {
@@ -670,8 +692,17 @@ p {
         border-radius: 10px;
         width: 100%;
         height: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: var(--shadow);
+        order: 1;
+        margin-left: 0%;
+    }
+
+    .projectimg2 img:hover {
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        box-shadow: var(--hovershadow);
         order: 1;
         margin-left: 0%;
     }
