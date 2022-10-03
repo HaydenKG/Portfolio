@@ -1,7 +1,8 @@
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar__menu')
-const furtherprojbtn = document.querySelector('#furtherprojbtn')
-const furtherprojectsexpand = document.querySelector('.furtherprojectshidden')
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+const webSelectionBtn = document.querySelector("#webBtn");
+const threeDSelectionBtn = document.querySelector("#threeDBtn");
+const projectContainer = document.querySelector(".projectscontainer");
 
 let clicked = false;
 
@@ -10,13 +11,14 @@ menu.addEventListener('click', function () {
     menuLinks.classList.toggle('active');
 })
 
-furtherprojbtn.addEventListener('click', function () {
-    furtherprojectsexpand.classList.toggle('active');
-    if (clicked) {
-        furtherprojbtn.innerHTML = "more";
-        clicked = false;
+function switchProjectSelection(selection){
+    if(selection === "web"){
+        webSelectionBtn.classList.add("selectedSectionBtn");
+        threeDSelectionBtn.classList.remove("selectedSectionBtn");
+        projectContainer.classList.remove("otherSelectionSelected");
     } else {
-        furtherprojbtn.innerHTML = "hide";
-        clicked = true;
+        threeDSelectionBtn.classList.add("selectedSectionBtn");
+        webSelectionBtn.classList.remove("selectedSectionBtn");
+        projectContainer.classList.add("otherSelectionSelected");
     }
-})
+}

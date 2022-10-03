@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hayden Gutoskie's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="media/LogoWhite.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -45,145 +41,147 @@
     <div id="separator" class="separator">
         <h2>Some of my work</h2>
     </div>
+    <div id="projectSelection">
+        <p id="webBtn" class="projectSelectionBtn selectedSectionBtn" onclick="switchProjectSelection('web')">Web</p><p>|</p><p id="threeDBtn" class="projectSelectionBtn"  onclick="switchProjectSelection('3d')">3D</p>
+    </div>
 
-    <div class=" projectscontainer">
-        <!--balancebreak-->
-        <div class="projectrow">
-            <div class="projectimg">
-                <a href="https://play.google.com/store/apps/details?id=com.RHApplicationStudio.BalanceBreak"
-                    target="blank">
-                    <img src="media/Vorstellgrafik2.png" alt="Logo of BalanceBreak app" width="500" height="300" />
-                </a>
+    <div class="projectscontainer">
+        <div class="sectionContainer" id="webProjects">
+            <!--Ambient LED fullstack-->
+            <div class="projectrow">
+                <div class="projectimg">
+                    <a href="./Subpages/TimeCapture.html">
+                        <img src="media/BreathxerciseThumbnail.webp" alt="Thumbnail of breathing session" width="500"
+                            height="300" />
+                    </a>
+                </div>
+                <div class=" projecttext">
+                    <h1>Worktime capture</h1>
+                    <p>A web project to capture work and break times.</p>
+                    <p>Individual project to enhance Vue 3 and web skills.</p>
+                    <br>
+                    <a href="./Subpages/TimeCapture.html">
+                        Details <i class="arrow right"></i>
+                    </a>
+                    <ul class="technologies-used">
+                        <li>Vue</li>
+                        <li>HTML / CSS / JS</li>
+                        <li>Lunacy</li>
+                    </ul>
+                </div>
             </div>
-            <div class="projecttext">
-                <h1>BalanceBreak</h1>
-                <p>App to train one's balance using XR- and game-mechanics.
-                    <br> Suitable for various fitness-levels.</p>
-                <br>
-                <a href="https://play.google.com/store/apps/details?id=com.RHApplicationStudio.BalanceBreak"
-                    target="blank">
-                    Available on Android <i class="arrow right"></i>
-                </a>
-                <ul class=" technologies-used">
-                    <li>Unity</li>
-                    <li>GitHub & Plastic SCM</li>
-                    <li>Lunacy</li>
-                    <li>C# & JSON</li>
-                </ul>
+            <!--Ambient LED fullstack-->
+            <div class="projectrow">
+                <div class="projecttext2">
+                    <h1>LED ambient light</h1>
+                    <p>A arduino project with a webserver, frontend and controlls for an LED strip.</p>
+                    <p>Individual project to enhance microcontroller- and web skills.</p>
+                    <br>
+                    <a href="./Subpages/ambientLED.html">
+                        Details <i class="arrow right"></i>
+                    </a>
+                    <ul class="technologies-used">
+                        <li>Arduino</li>
+                        <li>C</li>
+                        <li>HTML / CSS / JS</li>
+                        <li>Lunacy</li>
+                    </ul>
+                </div>
+                <div class="projectimg">
+                    <a href="./Subpages/ambientLED.html">
+                        <img src="media/BreathxerciseThumbnail.webp" alt="Thumbnail of breathing session" width="500" height="300" />
+                    </a>
+                </div>
+            </div>
+            <!--Breathing exercise webapp-->
+            <div class="projectrow">
+                <div class="projectimg">
+                    <a href="https://haydenkg.github.io/Breathxercise/" target="blank">
+                        <img src="media/BreathxerciseThumbnail.webp" alt="Thumbnail of breathing session" width="500"
+                            height="300" />
+                    </a>
+                </div>
+                <div class=" projecttext">
+                    <h1>Breathxercise</h1>
+                    <p>A minimal web app for a guided breathing session made with Svelte.</p>
+                    <p>Individual project to enhance Svelte and JavaScript skills.</p>
+                    <br>
+                    <a href="https://haydenkg.github.io/Breathxercise/">
+                        Details <i class="arrow right"></i>
+                    </a>
+                    <ul class="technologies-used">
+                        <li>Svelte</li>
+                        <li>HTML / CSS / JS</li>
+                        <li>Lunacy</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!--Environmental stressors-->
-        <div class="projectrow">
-            <div class="projecttext2">
-                <h1>Stressorvisualization</h1>
-                <p>Visualizing environmental stressor data in a digital-3D-twin of a real building.</p>
-                <p>Internship and thesis with the Fraunhofer Institute for Computer Graphics Research.</p>
-                <br>
-                <a href="Subpages/StressorVisualization.html">
-                    Demo <i class="arrow right"></i>
-                </a>
-                <ul class="technologies-used">
-                    <li>Unity</li>
-                    <li>Lunacy</li>
-                    <li>Blender</li>
-                    <li>C# & HLSL</li>
-                </ul>
+        <div class="sectionContainer" id="3dProjects">
+            <!--balancebreak-->
+            <div class="projectrow">
+                <div class="projectimg">
+                    <a href="https://play.google.com/store/apps/details?id=com.RHApplicationStudio.BalanceBreak"
+                        target="blank">
+                        <img src="media/Vorstellgrafik2.png" alt="Logo of BalanceBreak app" width="500" height="300" />
+                    </a>
+                </div>
+                <div class="projecttext">
+                    <h1>BalanceBreak</h1>
+                    <p>App to train one's balance using XR- and game-mechanics.
+                        <br> Suitable for various fitness-levels.</p>
+                    <br>
+                    <a href="https://play.google.com/store/apps/details?id=com.RHApplicationStudio.BalanceBreak"
+                        target="blank">
+                        Available on Android<i class="arrow right"></i>
+                    </a>
+                    <ul class=" technologies-used">
+                        <li>Unity</li>
+                        <li>GitHub & Plastic SCM</li>
+                        <li>Lunacy</li>
+                        <li>C# & JSON</li>
+                    </ul>
+                </div>
             </div>
-            <div class="projectimg2">
-                <a href="Subpages/StressorVisualization.html">
-                    <img src="media/StressorVizThumbnail.png" alt="Thumbnail of stressor visualization application" width="500" height="300" />
-                </a>
-            </div>
-        </div>
-        <!--Entity uni-video-->
-        <div class="projectrow">
-            <div class="projectimg">
-                <a href="https://haydenkg.github.io/Breathxercise/"
-                    target="blank">
-                    <img src="media/BreathxerciseThumbnail.webp" alt="Thumbnail of breathing session" width="500" height="300" />
-                </a>
-            </div>
-            <div class=" projecttext">
-                <h1>Breathxercise</h1>
-                <p>A web app for a guided breathing session made with Svelte.</p>
-                <p>Individual project to enhance Svelte and JavaScript skills.</p>
-                <br>
-                <a href="https://haydenkg.github.io/Breathxercise/">
-                    Details <i class="arrow right"></i>
-                </a>
-                <ul class="technologies-used">
-                    <li>Svelte</li>
-                    <li>HTML / CSS / JS</li>
-                    <li>Lunacy</li>
-                </ul>
+            <!--Environmental stressors-->
+            <div class="projectrow">
+                <div class="projecttext2">
+                    <h1>Stressorvisualization</h1>
+                    <p>Visualizing environmental stressor data in a digital-3D-twin of a real building.</p>
+                    <p>Internship and thesis with the Fraunhofer Institute for Computer Graphics Research.</p>
+                    <br>
+                    <a href="Subpages/StressorVisualization.html">
+                        Demo <i class="arrow right"></i>
+                    </a>
+                    <ul class="technologies-used">
+                        <li>Unity</li>
+                        <li>Lunacy</li>
+                        <li>Blender</li>
+                        <li>C# & HLSL</li>
+                    </ul>
+                </div>
+                <div class="projectimg2">
+                    <a href="Subpages/StressorVisualization.html">
+                        <img src="media/StressorVizThumbnail.png" alt="Thumbnail of stressor visualization application" width="500" height="300" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--further projects-->
-    <h2 style="text-align: center; padding-top: 3%;">Other projects</h2>
-    <div class="furtherproj-container">
-        <div class="project">
-            <a href="Subpages/Lenart.html" style="text-decoration: none;">
-                <div class="furtherprojbackground" style="
-            background-image: url('media/Lennart.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Len.art</h1>
-                        <p>production of a promovideo</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="https://haydenkg.github.io/TaskList/" style="text-decoration: none;">
-                <div class="furtherprojbackground" style="
-            background-image: url('media/TaskList.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Task list</h1>
-                        <p>JavaScript project</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-    </div>
-    <div class="furtherprojectshidden">
-        <div class="project">
-            <a href="Subpages/Entity.html" style="text-decoration: none;">
-                <div class="furtherprojbackground" style="
-            background-image: url('media/Entity.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Entity</h1>
-                        <p>Video with 3D animations</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="Subpages/photography.html" style="text-decoration: none;">
-                <div class="furtherprojbackground" style="
-            background-image: url('media/Photography/SymmetryNPatterns2.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Photography</h1>
-                        <p>Hobby</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <button id="furtherprojbtn">more</button>
+    <button id="furtherprojbtn" onclick="window.open('./Subpages/Archive.html', '_self')">archive</button>
 
     <!--Technologies used-->
     <div class="recent_technologies">
         <h1 style="font-size: 130%;">Technologies and tools I've been working with recently</h1>
         <ul class="recent_technologies_list">
             <li>HTML / CSS / JS</li>
-            <li>Unity</li>
-            <li>GitHub / Plastic SCM</li>
+            <li>Unity & Unreal Engine</li>
+            <li>GitHub</li>
             <li>Lunacy</li>
             <li>Blender</li>
-            <li>Davinci Resolve</li>
-            <li>Svelte</li>
+            <li>Vue 3</li>
+            <li>Arduino</li>
         </ul>
     </div>
 
@@ -198,9 +196,7 @@
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hayden-kulle-gutoskie">
                 LinkedIn
             </a>
-        </div>
-        <div class="madeBy">
-            <p style="font-size: 1.1em;">Designed and built by Hayden</p>
+            <p style="font-size: .7em;">Designed and <br>built by Hayden</p>
         </div>
     </div>
 

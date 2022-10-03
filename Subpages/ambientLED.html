@@ -1,0 +1,76 @@
+<!--Welcome to my code-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambient LED</title>
+    <link rel="stylesheet" href="Subpage.css" />
+    <link rel="icon" href="../media/ThumbLogo.png">
+</head>
+
+<body>
+    <div class="fadeinarea"></div>
+    <div class="header">
+        <div class="returnhome">
+            <a href="../index.html">
+                <img src="../media/ThumbLogo.png" alt="Logo" width="70px" height="70px" id="navbar__logo" />
+            </a>
+        </div>
+    </div>
+
+    <div class="introduction_container">
+        <div class="title">
+            <h1>Ambient LED</h1>
+            <h2>Arduino stack to control an LED stripe</h2>
+            <p>side project</p>
+            <p>2022</p>
+        </div>
+
+        <div class="description">
+            <pre>
+            After I moved to Ingolstadt, I recognized that my living room was
+            lacking ambient light, because let's be honest, your room
+            can look very fancy when tinged into a sunset orange or ocean blue. 
+            I had the option to simply buy a standing LED lamp,
+            but you learn more and it's more fun if you make one yourself.
+            Hence, the idea of creating a setup that lets me control
+            and customize the lights to my liking from my phone.
+            
+            The complete setup consists of the ESP8266 starting a web server 
+            to be reached from the local network. Serving the frontend files upon request.
+            The frontend requests the current status and available animations upon loading.
+            It provides the option to change the current color, set a different brightness,
+            set a different animation to play. 
+            
+            The goal being to keep the cognitive load to a minimum during usage 
+            for less cognitive load, while also trying to design something
+            different than the usual front page with a circle of all available colors.
+            
+            Design process: 
+            - Researched the equipment requirements and what languages they use
+            - Ordered an ESP8266, cables and a 1m WS2812 stripe
+            - Sketched out multiple ideas of the frontend with Lunacy
+            - Implemented a minimum viable prototype of the microprocessor logic and frontend
+            - Implemented further features such as animations on the frontend and hardware level 
+
+            Software and technologies used: 
+            VS code, Lunacy, Arduino libraries, C, HTML / CSS / JS
+            
+            Lessons learned: 
+            Underlined the importance of writing less code to accomplish the same thing
+            while restricting myself to one file to host the CSS, HTML and JS.
+            While implementing a wheel you can learn a lot, but if you need speed 
+            just go for the libraries already provided.   
+            
+            Next steps if I were to continue development:
+            - Including more animations
+            - A fade for the change of colors
+            </pre>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

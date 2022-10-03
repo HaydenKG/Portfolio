@@ -1,7 +1,9 @@
 /*Variables*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
 :root {
     --dark-grey: #212121;
-    --ocean: #001f74;
+    --ocean: #003cdf;
     --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --hovershadow: 0 6px 12px 0 rgba(63, 45, 45, 0.25),
@@ -43,15 +45,16 @@ p {
     font-size: 1.2em;
 }
 
+button {
+    color: inherit;
+}
+
 .arrow {
     border: solid var(--ocean);
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 5px;
     transition: 500ms ease;
-}
-
-.arrow {
     transform: translateX(+20px);
 }
 
@@ -64,8 +67,8 @@ p {
     margin: 0 auto;
     z-index: 10;
     width: 100%;
-    height: 350%;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     background-color: white;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
@@ -106,6 +109,7 @@ p {
     font-size: 1.2rem;
     top: 0;
     z-index: 2;
+    width: 100%;
 }
 
 .navbar__logo {
@@ -182,7 +186,7 @@ p {
 .separator {
     display: flex;
     align-items: center;
-    padding: 0 20% 5% 20%;
+    padding: 0 20% 1% 20%;
 }
 
 .separator::before,
@@ -201,9 +205,41 @@ p {
     margin-left: 2%;
 }
 
+#projectSelection {
+    display: grid;
+    grid-template-columns: 1fr .1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0 35% 10px 35%;
+}
+
+.projectSelectionBtn {
+    font-size: 1.4rem;
+}
+
+.projectSelectionBtn:hover {
+    cursor: pointer;
+}
+
+.selectedSectionBtn {
+    color: var(--ocean);
+    scale: 1.05;
+}
+
 .projectscontainer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    width: 200%;
+    transition: transform .4s ease-in-out;
+}
+
+.otherSelectionSelected {
+    transform: translateX(-50%);
+}
+
+.sectionContainer {
+    width: 50%;
 }
 
 .projectrow {
@@ -292,86 +328,21 @@ p {
     margin-bottom: 3%;
 }
 
-.project {
-    display: flex;
-    justify-content: center;
-}
-
-.furtherprojbackground {
-    width: 26rem;
-    height: 16rem;
-    color: #000;
-    background-position: center;
-    background-repeat: space;
-    background-size: 30rem auto;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    transition: all .25s ease-in-out;
-}
-
-.furtherprojbackground:hover {
-    color: #000;
-    background-position: center;
-    background-repeat: space;
-    background-size: 30rem auto;
-    border-radius: 10px;
-    box-shadow: var(--hovershadow);
-}
-
-.furtherprojtext {
-    color: #fff;
-    transform: translateY(100%);
-    text-align: center;
-}
-
-.furtherprojectshidden {
-    position: fixed;
-    display: grid;
-    z-index: -5;
-    margin-bottom: 3%;
-    opacity: 0;
-    transition: all .3s linear;
-    max-height: 0;
-}
-
-/*make animation with js for a smoother experience*/
-.furtherprojectshidden .furtherprojbackground {
-    max-height: inherit;
-}
-
-.furtherprojectshidden.active {
-    z-index: 1;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 4%;
-    justify-content: space-evenly;
-    opacity: 1;
-    max-height: 100%;
-}
-
 #furtherprojbtn {
-    margin: 0 auto;
+    margin: 20px auto;
     display: block;
     border-radius: 5px;
     background-color: white;
-    color: black;
     border: 2px solid rgba(21, 16, 139, .4);
     padding: 8px 24px;
     font-size: 110%;
     cursor: pointer;
-    transition-duration: .4s;
     box-shadow: var(--shadow);
+    transition: all .4s;
 }
 
 #furtherprojbtn:hover {
-    margin: 0 auto;
-    display: block;
-    border-radius: 5px;
-    background: white;
-    color: black;
-    padding: 8px 24px;
-    cursor: pointer;
+    border-color: var(--ocean);
     box-shadow: var(--hovershadow);
 }
 
@@ -411,12 +382,6 @@ p {
     align-items: center;
     justify-content: space-around;
     font-size: 1.2em;
-}
-
-.madeBy {
-    text-align: center;
-    padding-bottom: 2%;
-    color: var(--dark-grey);
 }
 
 /*------------------------- MOBILE -------------------------*/
@@ -556,7 +521,7 @@ p {
         box-shadow: var(--shadow);
     }
 
-    .projectimg img:hover{
+    .projectimg img:hover {
         display: grid;
         grid-template-columns: auto;
         place-items: center;
