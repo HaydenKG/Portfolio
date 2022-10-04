@@ -250,11 +250,13 @@ button {
     justify-content: center;
     align-items: center;
     align-content: stretch;
+    padding: 0 15px;
+    transform: translateX(10px);
 }
 
 .projectrow>div {
     flex: 1 1 auto;
-    margin: 2%;
+    margin: 15px;
 }
 
 .projectimg img {
