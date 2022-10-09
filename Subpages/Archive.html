@@ -31,33 +31,30 @@
         .project {
             display: flex;
             justify-content: center;
+            position: relative;
         }
 
         .furtherprojbackground {
             width: 26rem;
             height: 16rem;
-            color: #000;
             background-position: center;
             background-repeat: space;
             background-size: 30rem auto;
             border-radius: 10px;
             box-shadow: var(--shadow);
+            filter: brightness(.4);
             transition: all .25s ease-in-out;
         }
 
         .furtherprojbackground:hover {
-            color: #000;
-            background-position: center;
-            background-repeat: space;
-            background-size: 30rem auto;
-            border-radius: 10px;
             box-shadow: var(--hovershadow);
         }
 
         .furtherprojtext {
+            position: absolute;
+            top: 30%;
+            width: 100%;
             color: #fff;
-            transform: translateY(100%);
-            text-align: center;
         }
 
         #furtherprojbtn {
@@ -84,6 +81,7 @@
             cursor: pointer;
             box-shadow: var(--hovershadow);
         }
+
     </style>
 </head>
 <body>
@@ -109,13 +107,24 @@
     <h3 id="archiveHeading">These are older projects of various background, par example during uni or as a hobby.</h3>
     <div class="furtherproj-container">
         <div class="project">
+            <a href="https://haydenkg.github.io/Breathxercise/" style="text-decoration: none;">
+                <div class="furtherprojbackground" style="
+                        background: center/110% rgba(30 30 30) url('../media/Archive/BreathxerciseThumbnail.webp');">
+                </div>
+                <div class="furtherprojtext">
+                    <h1>Breathxercise</h1>
+                    <p>Svelte webapp for guided breathing</p>
+                </div>
+            </a>
+        </div>
+        <div class="project">
             <a href="./ArchivedPages/Lenart.html" style="text-decoration: none;">
                 <div class="furtherprojbackground" style="
                 background-image: url('../media/Archive/Lennart.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Len.art</h1>
-                        <p>production of a promovideo</p>
-                    </div>
+                </div>
+                <div class="furtherprojtext">
+                    <h1>Len.art</h1>
+                    <p>production of a promovideo</p>
                 </div>
             </a>
         </div>
@@ -123,10 +132,10 @@
             <a href="./ArchivedPages/Entity.html" style="text-decoration: none;">
                 <div class="furtherprojbackground" style="
                 background-image: url('../media/Archive/Entity.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Entity</h1>
-                        <p>Video with 3D animations</p>
-                    </div>
+                </div>
+                <div class="furtherprojtext">
+                    <h1>Entity</h1>
+                    <p>Video with 3D animations</p>
                 </div>
             </a>
         </div>
@@ -134,10 +143,10 @@
             <a href="./ArchivedPages/photography.html" style="text-decoration: none;">
                 <div class="furtherprojbackground" style="
                 background-image: url('../media/Photography/SymmetryNPatterns2.webp');">
-                    <div class="furtherprojtext">
-                        <h1>Photography</h1>
-                        <p>Rules I like to use <br> when taking photos</p>
-                    </div>
+                </div>
+                <div class="furtherprojtext">
+                    <h1>Photography</h1>
+                    <p>Rules I like to use <br> when taking photos</p>
                 </div>
             </a>
         </div>
