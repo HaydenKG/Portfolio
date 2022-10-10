@@ -166,4 +166,12 @@ pre {
         font-style: italic;
         display: grid;
     }
+
+    .horizontalImgExamples {
+        grid-template-columns: auto;
+    }
+
+    .verticalImgExamples {
+        grid-template-columns: auto;
+    }
 }
