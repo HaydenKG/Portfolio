@@ -18,6 +18,7 @@ a {
 pre {
     font-family: inherit;
     white-space: pre;
+    font-size: 1.1rem;
 }
 
 .fadeinarea {
@@ -95,7 +96,7 @@ pre {
     display: grid;
     grid-template-columns: .7fr .7fr;
     grid-gap: 15px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     padding: 0 5%;
     justify-items: center;
 }
@@ -150,10 +151,6 @@ pre {
         padding-right: 1%;
         font-family: 'Nunito', sans-serif;
         white-space: pre-line;
-    }
-
-    .description {
-        padding-right: 5%;
     }
 
     .title img {
