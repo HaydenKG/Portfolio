@@ -16,7 +16,7 @@
         }
 
         #archiveHeading {
-            margin-top: 20px;
+            margin: 40px 0 20px 0;
         }
 
         .furtherproj-container {
@@ -30,7 +30,6 @@
 
         .project {
             display: flex;
-            justify-content: center;
             position: relative;
         }
 
@@ -87,6 +86,22 @@
                 grid-template-columns: auto;
             }
 
+             .furtherprojtext {
+            }
+
+        }
+
+         @media only screen and (max-width: 500px) {
+            .furtherproj-container{
+                padding-top: 5%;
+            }
+
+            .furtherprojbackground {
+                width: 90vw;
+                aspect-ratio: 16/11;
+                height: auto;
+            }
+
         }
 
     </style>
@@ -111,7 +126,7 @@
             </ul>
         </div>
     </nav>
-    <h3 id="archiveHeading">These are older projects of various background, par example during uni or as a hobby.</h3>
+    <h3 id="archiveHeading">These are older projects of various background, for example during uni or as a hobby.</h3>
     <div class="furtherproj-container">
         <div class="project">
             <a href="https://haydenkg.github.io/Breathxercise/" style="text-decoration: none;">
