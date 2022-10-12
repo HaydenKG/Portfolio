@@ -211,7 +211,7 @@ button {
 #projectSelection {
     display: grid;
     grid-template-columns: 1fr .1fr 1fr;
-    column-gap: 5px;
+    column-gap: 10px;
     justify-items: center;
     align-items: start;
     padding: 0 35% 10px 35%;
@@ -249,10 +249,10 @@ button {
 .projectrowImgL {
     width: 100%;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     padding: 0 15px;
     align-items: center;
-    justify-items: start;
+    justify-items: center;
 }
 
 .projectrowImgL>div {
@@ -261,7 +261,7 @@ button {
 }
 
 .projectrowImgR {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.2fr;
 }
 
 .projectimg img {
